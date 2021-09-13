@@ -1,14 +1,15 @@
-<?php 
+<?php
 
 get_header();
 pageBanner(array(
   'title' => 'All Events',
   'subtitle' => 'See what is going on in our world.'
 ));
-?>
+ ?>
 
 <div class="container container--narrow page-section">
-<?php 
+<?php
+  
   while(have_posts()) {
     the_post(); 
     get_template_part('template-parts/content-event');
